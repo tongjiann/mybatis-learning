@@ -13,6 +13,8 @@ public class MappedStatement {
 
     private String sql;
 
+    private String sqlCommandType;
+
     public String getStatementId() {
         return statementId;
     }
@@ -43,6 +45,14 @@ public class MappedStatement {
 
     public void setSql(String sql) {
         this.sql = sql;
+    }
+
+    public String getSqlCommandType() {
+        return sqlCommandType;
+    }
+
+    public void setSqlCommandType(String sqlCommandType) {
+        this.sqlCommandType = sqlCommandType;
     }
 
 }

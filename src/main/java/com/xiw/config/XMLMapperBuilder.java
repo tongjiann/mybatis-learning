@@ -45,6 +45,7 @@ public class XMLMapperBuilder {
                 mappedStatement.setParameterType(parameterType);
                 mappedStatement.setResultType(resultType);
                 mappedStatement.setSql(sql);
+                mappedStatement.setSqlCommandType("select");
 
                 configuration.getMappedStatementMap().put(statementId, mappedStatement);
             }

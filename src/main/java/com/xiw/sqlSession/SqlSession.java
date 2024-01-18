@@ -12,4 +12,6 @@ public interface SqlSession extends Closeable {
 
     <T> T selectOne(String statementId, Object param) throws SQLException, IntrospectionException, NoSuchFieldException, ClassNotFoundException, InvocationTargetException, IllegalAccessException, InstantiationException;
 
+    <T> T getMapper(Class<?> mapperClass);
+
 }
